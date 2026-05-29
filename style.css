@@ -17,19 +17,44 @@ header{
   position:fixed;
   top:0;
   width:100%;
+
   padding:20px 80px;
+
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background:rgba(0,0,0,.4);
-  backdrop-filter:blur(10px);
+
+  background:rgba(0,0,0,.72);
+
+  backdrop-filter:blur(14px);
+
+  border-bottom:1px solid rgba(255,255,255,.05);
+
   z-index:100;
 }
 
 .logo{
-  font-size:22px;
-  font-weight:bold;
-  color:white;
+  display:flex;
+  align-items:center;
+}
+
+.logo img{
+  width:180px;
+
+  border-radius:18px;
+
+  padding:8px;
+
+  background:rgba(255,255,255,.04);
+
+  box-shadow:
+    0 4px 20px rgba(0,0,0,.35);
+
+  transition:.3s;
+}
+
+.logo img:hover{
+  transform:scale(1.03);
 }
 
 nav{
@@ -462,6 +487,10 @@ header button:hover{
 
   header{
     padding:20px;
+  }
+
+  .logo img{
+  width:140px;
   }
 
   nav{
